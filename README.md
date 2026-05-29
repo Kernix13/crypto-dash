@@ -83,15 +83,17 @@ React project using the coingecko API that shows different crypto coins and asso
 ├── public/
 │   └── favicon.ico         # Site favicon linked in index.html
 ├── src/
-│   ├── components/
+│   └── components/
 │       ├── CoinCard.jsx
 │       ├── filteredCoins.jsx
 │       ├── LimitSelector.jsx
 │       └── SortSelector.jsx
+│   └── pages/
+│       ├── about.jsx
+│       └── home.jsx
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
-└── ???/
 ```
 
 ## Next heading?
