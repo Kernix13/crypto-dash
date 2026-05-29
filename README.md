@@ -76,6 +76,7 @@ React project using the coingecko API that shows different crypto coins and asso
 ├── .env.example            # Template for required environment variables in .env
 ├── .eslint.config.js       # Rules for ESLint
 ├── .gitignore              # Specific files and folders Git should ignore
+├── .gitattributes          # Enforces consistent line endings
 ├── index.html              # Main HTML page
 ├── package.json            # Dependencies and scripts
 ├── vite.config.js          # Config file for Vite bundler
