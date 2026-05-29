@@ -85,6 +85,7 @@ React project using the coingecko API that shows different crypto coins and asso
 ├── src/
 │   ├── components/
 │       ├── CoinCard.jsx
+│       ├── filteredCoins.jsx
 │       └── LimitSelector.jsx
 │   ├── App.jsx
 │   ├── index.css
