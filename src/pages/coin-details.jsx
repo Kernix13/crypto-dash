@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router";
+import Spinner from "../components/Spinner";
+
+const API_URL = import.meta.env.VITE_COIN_API_URL;
 
 const CoinDetailsPage = () => {
   const { id } = useParams();
   const [coin, setCoin] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
-  const API_URL = import.meta.env.VITE_COIN_API_URL;
 
   useEffect(() => {
     const fetchCoin = async () => {
@@ -24,7 +25,7 @@ const CoinDetailsPage = () => {
       }
     }
     fetchCoin();
-  }, [API_URL, id]);
+  }, [id]);
 
   return (  
     <div className='coin-details-container'>
@@ -34,7 +35,7 @@ const CoinDetailsPage = () => {
         {coin ? `${coin.name} (${coin.symbol.toUpperCase()})` : 'Coin Details'}
       </h1>
 
-      {loading && <p>Loading...</p>}
+      {loading && <Spinner />}
       {error && <p className='error'>❌ {error}</p>}
 
       {!loading && !error && coin && (
