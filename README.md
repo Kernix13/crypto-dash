@@ -71,7 +71,7 @@ React project using the coingecko API that shows different crypto coins and asso
 ├── CONTRIBUTING.md
  -->
 
-```python
+```yml
 /
 ├── README.md
 ├── .github/                # GitHub Issue and PR templates (later)
@@ -87,6 +87,7 @@ React project using the coingecko API that shows different crypto coins and asso
 ├── src/
 │   └── components/
 │       ├── CoinCard.jsx
+│       ├── CoinChart.jsx
 │       ├── FilteredCoins.jsx
 │       ├── Header.jsx
 │       ├── LimitSelector.jsx
