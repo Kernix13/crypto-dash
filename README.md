@@ -9,9 +9,10 @@ React project using the coingecko API that shows different crypto coins and asso
 - Limit selector
 - Filter coin results
 - Sort coin results
-- Routing with React Rounter v7 in declarative mode for each coin result
-- Loading spinner
-- Chart data for each coin
+- Routing with [React Rounter](https://reactrouter.com/)
+- Route for individual coins using [react-spinners](https://www.npmjs.com/package/react-spinners)
+- Loading spinner for coin routes
+- Chart data for each coin route using [Chart.js](https://www.chartjs.org/) & [react-chartjs-2](https://react-chartjs-2.js.org/)
 
 ## Technologies Used
 
@@ -46,7 +47,8 @@ React project using the coingecko API that shows different crypto coins and asso
 4. Add the replacement env-vars to the `.env` file then delete `.env.example`. Make sure to keep the prefix `VITE_`. NOTE: The endpoint is not private so having a `.env` is unnecessary for this project at this time:
 
    ```env
-   VITE_API_URL=coingecko_endpoint
+   VITE_API_URL="coingecko_endpoint"
+   VITE_COIN_API_URL="coingecko_coin_endpoint"
    ```
 
 5. Start the development server:
@@ -85,15 +87,21 @@ React project using the coingecko API that shows different crypto coins and asso
 ├── src/
 │   └── components/
 │       ├── CoinCard.jsx
-│       ├── F  ilteredCoins.jsx
+│       ├── FilteredCoins.jsx
+│       ├── Header.jsx
 │       ├── LimitSelector.jsx
-│       └── SortSelector.jsx
+│       ├── SortSelector.jsx
+│       └── spinner.jsx
 │   └── pages/
 │       ├── about.jsx
-│       └── home.jsx
+│       ├── coin-details.jsx
+│       ├── home.jsx
+│       └── not-found.jsx
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
 ```
 
-## Next heading?
+## Future improvements
+
+> Something here...
