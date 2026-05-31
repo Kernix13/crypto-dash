@@ -1,17 +1,17 @@
 # Crypto Currency Dashboard using React
 
-React project using the coingecko API that shows different crypto coins and associated data for each coin.
+Vanilla JavaScript React project using the coingecko API that shows different crypto coins and associated data for each coin. This is a project to learn React with an API and the use fof `useEffect`.
 
 ## Features
 
-- HTTP requests using async fetch call inside useEffect
+- HTTP requests using async fetch (inside `useEffect`)
 - Environment variables
-- Limit selector
-- Filter coin results
-- Sort coin results
+- Limit selector to vary the number of coin results
+- Filter coin results by name or symbol
+- Sort coin results on various criteria
 - Routing with [React Rounter](https://reactrouter.com/)
-- Route for individual coins using [react-spinners](https://www.npmjs.com/package/react-spinners)
-- Loading spinner for coin routes
+- Route for individual coins
+- Loading spinner using [react-spinners](https://www.npmjs.com/package/react-spinners)
 - Chart data for each coin route using [Chart.js](https://www.chartjs.org/) & [react-chartjs-2](https://react-chartjs-2.js.org/)
 
 ## Technologies Used
@@ -103,6 +103,4 @@ React project using the coingecko API that shows different crypto coins and asso
 │   └── main.jsx
 ```
 
-## Future improvements
-
-> Something here...
+<!-- ## Future improvements -->
